@@ -8,7 +8,7 @@ function CoinInfo({ name, description }) {
   
   return (
     <div className="grey-wrapper" onClick={() => setFlag(!flag)}>
-      <h2 className='coin-name'>{name}</h2>
+      <h2 className='coin-name-coin-info'>{name}</h2>
       {description.length > 300 ? (
         <p
           className="coin-desc"

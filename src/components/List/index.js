@@ -9,38 +9,38 @@ function List({ coin }, { i }) {
   return (
     <Link to={`/coin/${coin.id}`}>
       <tr className="list-row">
-        <td className="td-image">
+        <td className="list-td-image">
           <Tooltip title="Logo">
             <img src={coin.image} className="coin-logo" />
           </Tooltip>
         </td>
         <td>
-          <td className="name-col">
+          <td className="list-name-col">
             <Tooltip title="Symbol">
-              <p className="coin-symbol">{coin.symbol}</p>
+              <p className="list-coin-symbol">{coin.symbol}</p>
             </Tooltip>
 
             <Tooltip title="Coin name">
-              <p className="coin-name">{coin.name}</p>
+              <p className="list-coin-name">{coin.name}</p>
             </Tooltip>
           </td>
         </td>
         {coin.price_change_percentage_24h > 0 ?(
-          <td className="chip-flex">
+          <td className="list-chip-flex">
             <Tooltip title="Percentage change">
-              <td className="price-chip">
+              <td className="list-price-chip">
                 {coin.price_change_percentage_24h.toFixed(2)}%
               </td>
             </Tooltip>
 
-            <td className="icon-chip">
+            <td className="list-icon-chip">
               <Tooltip title="Chart">
                 <TrendingUpRoundedIcon />
               </Tooltip>
             </td>
           </td>
         ) : (
-          <td className="chip-flex">
+          <td className="list-chip-flex">
             <Tooltip title="Percentage change">
               <td className="price-chip chip-red price-chip-td">
                 {coin.price_change_percentage_24h.toFixed(2)}%
@@ -69,7 +69,7 @@ function List({ coin }, { i }) {
             </h3>
           </Tooltip>
         </td>
-        <div className="volume-d">
+        <div className="list-volume">
           <td>
             <Tooltip title="Volume">
               <p className="total-volume td-volume">
@@ -80,7 +80,7 @@ function List({ coin }, { i }) {
         </div>
         <td>
           <Tooltip title="Market Cap">
-            <p className="total-volume td-volume">
+            <p className="total-volume td-volume list-marketcap">
               ${coin.market_cap.toLocaleString()}
             </p>
           </Tooltip>

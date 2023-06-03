@@ -20,7 +20,7 @@ function Grid({ coin }, key) {
         <div className="chip-flex">
           <div className="price-chip">
             {coin.price_change_percentage_24h.toFixed(2)}%
-          </div>
+          </div> 
           <div className="icon-chip">
             <TrendingUpRoundedIcon />
           </div>
@@ -50,7 +50,7 @@ function Grid({ coin }, key) {
         <p className="total-volume">
           Total Volume : {coin.total_volume.toLocaleString()}
         </p>
-        <p className="total-volume">
+        <p className="marketcap">
           Market Cap : ${coin.market_cap.toLocaleString()}
         </p>
       </div>

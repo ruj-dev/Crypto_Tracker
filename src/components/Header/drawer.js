@@ -1,6 +1,6 @@
 import * as React from "react";
 import Drawer from "@mui/material/Drawer";
-
+import {Link} from "react-router-dom";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { IconButton } from "@mui/material";
 import "./style.css";
@@ -26,18 +26,18 @@ export default function TemporaryDrawer() {
          }}
        >
          <div className="drawer-div">
-           <a href="/" className="link">
-             <p>home</p>
-           </a>
-           <a href="/" className="link">
-             <p>compare</p>
-           </a>
-           <a href="/" className="link">
-             <p>dashboard</p>
-           </a>
-           <a href="/" className="link">
-             <p>watchlist</p>
-           </a>
+           <Link to="" className="link">
+             <p>Home</p>
+           </Link>
+           <Link to="" className="link">
+             <p>Compare</p>
+           </Link>
+           <Link to="/dashboard" className="link">
+             <p>Dashboard</p>
+           </Link>
+           <Link to="" className="link">
+             <p>Watchlist</p>
+           </Link>
          </div>
        </Drawer>
      </div>

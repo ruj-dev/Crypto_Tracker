@@ -122,6 +122,18 @@
                  
 
 }
+@media only screen and (width <600px){
+    .phone-container {
+    
+            margin-left: 20%!important;
+            top: 3rem;
+    
+        }  .gradient {
+        
+              width: 20vw;
+              left: 20%
+          }
+}
 @media only screen and (width <400px){
 
     .track-crypto-heading,
@@ -144,7 +156,7 @@
                 }
                                 .phone-container {
                                    
-                                    margin-left: 1rem;
+                                    margin-left: 2rem!important;
                                     top: 3rem;
                 
                                 }

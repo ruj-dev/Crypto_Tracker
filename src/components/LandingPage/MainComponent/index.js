@@ -4,6 +4,7 @@ import Button from '../../../Commons/Button';
 import iphone from '../../../Asset/iphone.png';
 import gradient from "../../../Asset/gradient.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 function MainComponent() {
     return (
       <div className="flex-info">
@@ -29,9 +30,11 @@ function MainComponent() {
             do so!
           </p>
           <div className="flex-btn">
-            <a href="/dashboard">
-              <Button text={"Dashboard"} />
-            </a>
+            <Link to="/dashboard">
+              <Button text={"Dashboard"} onClick={() => {
+                console.log("hiivherfhfvherhre");
+              }} />
+            </Link>
             <Button
               text={"share"}
               outlined={true}

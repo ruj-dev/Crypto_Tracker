@@ -6,6 +6,32 @@
     border-radius:0.5rem ;
     
 }
+.list-coin-symbol {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.2 rem;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+.list-coin-name {
+    color: var(--grey);
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0;
+
+}
+.list-coin-symbol{
+    font-weight: 500;
+}
+.list-chip-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 a {
     text-decoration: none;
     /* remove underline */
@@ -29,7 +55,7 @@ span {
         width: 3rem!important;
         margin-right: 1.5rem;
 }
-.price-chip-td{
+.list-price-chip{
  margin-right: 0.5rem;
  text-align: center!important;
 }
@@ -39,13 +65,16 @@ span {
 .td-volume{
     text-align: right;
 }
+@media screen and (width<1000){
+
+}
 @media screen and (max-width: 600px) {
 
         .icon-chip {
             display: none;
         }
 
-        .volume-d {
+        .list-volume {
             background-color: aqua;
         }
 

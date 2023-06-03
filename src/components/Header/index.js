@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import { NavLink ,Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from "../../Commons/Button/index.js";
 
 import Switch from "@mui/material/Switch";
@@ -33,7 +33,7 @@ function Header() {
           </Link>
           <div className="link">
             <Link to="/dashboard">
-              {" "}
+              
               <Button
                 text={"Dashboard"}
                 onClick={() => {
